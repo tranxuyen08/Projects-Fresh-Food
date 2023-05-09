@@ -1,4 +1,4 @@
-const products = [
+const productsDB = [
   {
     id: 1,
     image: "image/1000_F_563984104_iGjGlcHA9p9FIRh2edt9VUsNkMBgVgAt.jpg",
@@ -160,4 +160,4 @@ const products = [
     price: 25000
   },
 ]
-localStorage.setItem('products', JSON.stringify(products))
+localStorage.setItem('products', JSON.stringify(productsDB))
