@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="detectify-verification" content="08768d719d68cfd48f685c8e77ec4004" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108485881-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108485881-2');
+</script>
+
+    <link rel="stylesheet" type="text/css" href="/css/front/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/front/swiper.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/front/ss_style.css" />
+<link rel="stylesheet" type="text/css" href="/fonts/front/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/front/tiny-toggle.css" />
+<link rel="stylesheet" type="text/css" href="/css/front/etalage.css" />
+<link rel="stylesheet" type="text/css" href="/css/front/lightslider.css" />
+<link rel="stylesheet" type="text/css" href="/css/cloud-zoom.css" />
+<link rel="stylesheet" type="text/css" href="/css/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" href="/css/owl.theme.css" />
+<link rel="stylesheet" type="text/css" href="/css/owl.transitions.css" />
+<link rel="stylesheet" type="text/css" href="/css/jalert/jquery.alerts.css" />
+<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/js/front/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/front/swiper.min.js"></script>
+<script type="text/javascript" src="/js/front/smoothscroll.js"></script>
+<script type="text/javascript" src="/js/front/parallax.min.js"></script>
+<script type="text/javascript" src="/js/front/jquery.elevatezoom.js"></script>
+<script type="text/javascript" src="/js/owl.carousel.js"></script>
+<script type="text/javascript" src="/js/front/parallax.js"></script>
+<script type="text/javascript" src="/js/jalert/jquery.alerts.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+ $.ajaxSetup({
+                         data: {"4f00557f0911c14a4435e7aacb790ff602165c2d": "4f00557f0911c14a4435e7aacb790ff602165c2d"},
+                         cache:false
+                    });
+var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39563631-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();
+ function validateSignUpForm() {
+		 	var news_letter_email    =   $('#news_letter_email').val();
+		 	var re = /^(([^<>()[\]\.,;:\s@"]+(\.[^<>()[\]\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	  	 	var check_email= re.test(news_letter_email);
+
+			if(check_email==false){
+                jAlert('Please enter a valid email','Alert');
+			}
+            else 
+            {
+				$('#smallModal').modal('show');	
+				$('#emailsend').val(news_letter_email);
+						
+            } 
+            }
+ function saveSignUpForm() {
+		 	var emailsend    =   $('#emailsend').val();
+			jQuery.ajax({
+				      'dataType':'json',
+				      'data': {'emailsend':emailsend}  ,
+				      'type':'post',
+				      'url': '/index.php/site/Subscribe',
+				      'cache': false,
+				      'success': function(data) {
+				        if(data.status=='success'){
+							$('#news_letter_email').val('');
+							$('#smallModal').modal('hide');	
+			                jAlert('Email send successfully','Alert');
+						}
+				      }
+			    	});
+            }
+/*]]>*/
+</script>
+<title>D-Link</title>
+    <!-- START Delve analytics snippet -->
+              
+          <script type="text/javascript">
+
+            (function(w, d, p, e, s, l, m) {
+
+              w[p] = w[p] || function () {
+
+                (w[p].q = w[p].q || []).push(arguments);
+
+              }
+
+              l = d.createElement(s);
+
+              l.async = 1;
+
+              l.src = e;
+
+              m = d.getElementsByTagName(s)[0]
+
+              m.parentNode.insertBefore(l, m);
+
+            })(window, document, 'delve', '//static.delveai.com/js/loader.js', 'script');
+
+            delve('set', 'cid', 'f23018');  //Sets the client Id
+
+          </script>
+          
+    
+<!-- END Delve analytics snippet -->
+     
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 947237799;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/947237799/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+    <!-- Bootstrap -->
+                                            
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+               
+                                                <!--  JAlert script and Css -->
+	 	     <script src='https://www.google.com/recaptcha/api.js'></script>
+        <!-- Fonts of dlink.us -->
+    <script src="https://use.typekit.net/yxs8onj.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <!-- End Fonts of dlink.us -->
+    <script>
+function checkemail(mail) {
+document.getElementById("emailsend").value = mail;
+}
+</script>
+
+
+  <link rel="SHORTCUT ICON" type="image/x-icon" href="img/front/favicon.ico" />
+  <link rel="icon" type="image/png" href="img/front/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/front/favicon-16x16.png" sizes="16x16" />
+  </head>
+  <body>
+
+ <header><nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="/index.php/site/index"><img class="img-responsive" src="/img/front/logo.png" alt="logo"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+       <!-- START HOME MENU -->
+
+        <li class=" s dropdown"> <a href="#" class="dropdown-toggle">FOR HOME</a>
+            <ul class="dropdown-menu mega-menu">
+
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <li class="nav-header firstmenu"><a href="/index.php/site/category?qr=ZVNtbUFsRWkxbjgvaW0wTU5FTE1SUT09">  Home</a></li>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=Nk1EWHloL2Zrd1J5NUJGcmdLSjNpUT09">ADSL Routers</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=aldGOVZITFN0Y1Yxdk1VUTN0c3lFZz09">Broadband Routers</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=bHVNc1Y5Vk9oYU9GQVJ0NFFMeTJyUT09">Adapters</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=VTdBTVViN0xOOWd3cW1CMEJPaVFPQT09">SOHO Switches </a></li>
+		                  
+
+		                </ul>
+	              	</li>
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <li class="nav-header firstmenu"><a href="/index.php/site/category?qr=blBLVEFlSHo2eW83Z3ZDWlBDNzdZUT09">  Network Expansion</a></li>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=MTBPOElpK2pVSXpSR3BxNFptVzNYUT09">Wi-Fi Range Extenders</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=TVNBR1F0ZlhUOGpMcUVlU3F2ZWdDQT09">Powerline</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=Q1Y3OFNYWGN5aUYyeXNFVkNRYm1xQT09">KVM Switches</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=YXFzc2hZcHVEVFdsVEdTVTRjWStHZz09">USB</a></li>
+		                  
+
+		                </ul>
+	              	</li>
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <li class="nav-header firstmenu"><a href="/index.php/site/category?qr=bVlNb29iWUhJTE9RenlVS0FxMzJsQT09">  Access Points</a></li>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=VWJZYlpjSklBN3VUVGd5ODdxODI0UT09">Indoor Access Points</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=NXV1b0xDaTV4ckowSVhmaUkxbXZGdz09">Outdoor Access Points</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=SjFtRUY3ZUx1L3MwQVVkaU1iVEdiQT09">Antennas </a></li>
+		                  
+
+		                </ul>
+	              	</li>
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <li class="nav-header firstmenu"><a href="/index.php/site/category?qr=VWxLcnRvMGNUdlNsaEdNbDB1czRBUT09">  Home Security </a></li>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=dkJaaHNpbWhXTEd4d1M5RjdXak9rdz09">Cloud Cameras</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=ZHJTZzlGUnBxVDQ4TU9iOGhRQkMwdz09">Wi-Fi Baby Cameras</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=QWRUa1RydHhMbFlBOXVpeHJKczEydz09">Network Video Recorder</a></li>
+		                  
+
+		                </ul>
+	              	</li>
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <li class="nav-header firstmenu"><a href="/index.php/site/category?qr=Y2JIcS9FL3Q2MlloR2FqL1JXYVhHQT09">  Mobile Wi-Fi</a></li>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=bVdlS0xoQ045WGVyeEpkNnBBZDltUT09">3G/4G LTE Routers</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=MjFlcC9SVzdMdHRoRjBHRmZzZzlRdz09">USB Dongles</a></li>
+		                  
+
+		                </ul>
+	              	</li>
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <li class="nav-header firstmenu"><a href="/index.php/site/category?qr=TmNtMFd5bUd1RXRsNFcyTzVLU1hmUT09">  Home Automation </a></li>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=K0FHajg1MjVlSnlzaHYxQllNeHRwZz09">Smart Plug </a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=YnEwalRNYlpnUDlqM29MMElZQkdydz09">Sensors</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=c3BqUnFBaXlNV041aVltUVFhN0Z4QT09">Cameras</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=YXY5K3BabzVVMklhYmdaSS81K0Radz09">Siren</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=enJRNkdRTmF3blhSdWpCYkdHMFlRQT09">Gateway</a></li>
+		                  
+
+		                </ul>
+	              	</li>
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <li class="nav-header firstmenu"><a href="/index.php/site/category?qr=Wm5SRmFNZEpWaDI3U1BoN0ptcGY0Zz09">  Home Storage</a></li>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=ZFBVb2hTSVFVWTVFK2NEVXZrQm1jZz09">Network Attached Storage (NAS)</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=ekd2T3ZOZ1Q2R25xQkR6TjZLUC9QQT09">Network Video Recorder (NVR) </a></li>
+		                  
+
+		                </ul>
+	              	</li>
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <li class="nav-header firstmenu"><a href="/index.php/site/category?qr=a3loRnJYZ2o5TGFMWlhSRkc4Q3BZdz09">  Digital Home &amp; Accessories</a></li>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=RERzcEFEUytXRk1waDdEUWxmOGUxUT09">Network Cards</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=Q0oycFJ4dmJtUXNKcDMyRE53OG44Zz09">USB Hubs</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=N2RJZmJqbU4wN0kvOTdIaDdKdXVUQT09">KVM </a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=T0ZSNHBOazF5TURLNkpvTkhJRzhWdz09">PoE Adapters</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=MGcvWGtsVDhUMmV0QXBCN2gvYnAzdz09">Print Servers</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=OUFnV2VCNTF3S2JZY2I0Uy9UWkhsdz09">D-Link Tablet</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=TzZMRjErbllBbnpiNXVtYzNmQjQzQT09">Media Players</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=QXVuQSt3WnN6Zzh0WUNURlJuaVdJUT09">Cables</a></li>
+		                  
+
+		                </ul>
+	              	</li>
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <li class="nav-header firstmenu"><a href="/index.php/site/category?qr=amw0ZTE5RFNyYmlEZlFmb0tEeWxNUT09">  mydlink Cloud</a></li>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=YnVMWGd0Nmpib2tuV0V5M01EYmNUQT09">Cloud Routers</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=WTJIYUtlT3JXaG4rc3JTeXRVWG1QQT09">Cloud Cameras</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=dVpGY1RKYjZrNFJWREZFcUNNOWcxQT09">Cloud Storage</a></li>
+		                  
+
+		                </ul>
+	              	</li>
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <li class="nav-header firstmenu"><a href="/index.php/site/category?qr=R2RKb3JVaXQ0NExPNWRVV0Z6MGxRUT09">  IP Cameras</a></li>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=bnZtaWVjSnM5TGE5R1FqdGhjRVpSdz09">Cube Cameras</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=aC9QUGVIMmJSV3IvRjVWS1RldzErQT09">PTZ Cameras</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=bTlWaU82eGg3Z2pTczJBWXRMdEwwUT09">Baby Cameras</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=cW12QWVoSkx3TGMrVDNFYmh5eklqQT09">360 Fisheye</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=dmlocUdzRGVaTmRVdVVaSEhPT3Z2dz09">Bullet Camera</a></li>
+		                  
+
+		                </ul>
+	              	</li>
+                        </ul>
+          </li>
+        <!-- END HOME MENU -->
+
+
+        <!-- START BUSINESS MENU -->
+          <!---megamenu 2-->
+
+        <li class=" s dropdown"> <a href="#" class="dropdown-toggle">FOR BUSINESS </a>
+            <ul class="dropdown-menu mega-menu">
+
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+		                   <li class="nav-header firstmenu"><a href="/index.php/site/category?qr=ZzRra0liTmVZTWtyMyswbXNqcW9IZz09">  Switches</a></li>
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=NlhUbHJucGlaeGRUcUZnQ2NDUDdmZz09">Chassis</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=N2J0VVhONWJ1aHJvZVpqTUxDTXdpdz09">Managed</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=QnEySXpRWTZGRk9tWkdoTmpYeXdFZz09">Smart</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=cGdHTmxCdm5lNDZXSElCN2pLSXVJZz09">Unmanaged</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=TFVWMmhTRnZCYS8rNlVXQXU3ZjVPUT09">Accessories</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=eW8xZGZ5NFBzR2lSc2NXZVhxYzRGdz09">Network Management Software</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=bEFucnRtVXNtOHR1SlU4ZVRTNlVMQT09">Outdoor Managed Switches</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=cDlzbnpDcGxHNG9vdTMwTUZibmpFQT09">Outdoor Unmanaged Switches</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=dkpMUXVHWlhkL2p5ZFVzMHl5SWZQUT09">Data Center Switches</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=RjVKUEZVMVNqb29wUWcweGJlNWo4dz09">Managed Cloud Switches</a></li>
+		                  
+
+		                </ul>
+	              	</li>
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+		                   <li class="nav-header firstmenu"><a href="/index.php/site/category?qr=bDFlTHRGbVNhQjNNR2x2SDVIWVEydz09">  Wireless</a></li>
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=alRMOVJlQWpGcTNCOWJjeE82b21MZz09">Software Managed AP&#039;s</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=OHRBK1BpV0d0RTRKS1JUVWQ4ZlhCQT09">Controller Managed AP&#039;s</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=Qm1QRjFWcXIrVE1aWjk2YU5hTnA1QT09">Cloud AP&#039;s</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=bGoxNUN3UkxPVnAzRmJQcUpNQUM4UT09">Controllers &amp; Switches</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=MlZtem1vcVNwd0JERTdUd2N0MEp3Zz09">Outdoor Bridges and APs</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=WXhDWFVybWsrcXpraGF3ZkRkY2x0UT09">Antennas </a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=amhqV3VhZ2I0WXRtTUFROFhoWTAwUT09">Standalone AP&#039;s</a></li>
+		                  
+
+		                </ul>
+	              	</li>
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+		                   <li class="nav-header firstmenu"><a href="https://dlinkmea.com/me/index.php?h=1?qr=dFBRamM2QjRhanhOcjhWSUkrL3gyZz09">  Surveillance</a></li>
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="https://dlinkmea.com/me/index.php?h=1?qr=bllWVmVkZmFqZ1p6d2xhM09LUlFRZz09">IP Cameras</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="https://dlinkmea.com/me/index.php?h=1?qr=RTBDOW9FNi92RlNzd1NMV29lWnZIZz09">Video Storage</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="https://dlinkmea.com/me/index.php?h=1?qr=a2Y0dWw3dEE5REQ0VlltQWd1QWMwZz09">Accessories</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="https://dlinkmea.com/me/index.php?h=1?qr=dDYwT1hDb1BEMFhlMEZRQlltaE5CUT09">CCTV</a></li>
+		                  
+
+		                </ul>
+	              	</li>
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+		                   <li class="nav-header firstmenu"><a href="/index.php/site/category?qr=MVdITkx3MXJBSlAvdGNhQytPNzJaUT09">  IP Telephony</a></li>
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=ODZUcGxBUGxNcXh6OCszLzFMRWtCUT09">IP Phones </a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=OGNQTHFXams3eXhuWUsyQUJiQzdIZz09">Gateways</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=TDV2RStKQTJteERTYXREUk4xOC9zUT09">IP PBX</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=aW5mMkNtTVVLYTNEVFJKR0dtbUFYdz09">Interface Cards</a></li>
+		                  
+
+		                </ul>
+	              	</li>
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+		                   <li class="nav-header firstmenu"><a href="/index.php/site/category?qr=blpZZU5uY2gvNTI2QUhyc0k0U0NJUT09">  Storage</a></li>
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=NDJ6dmZxZDNtTGp2OGZVbHIzTGlMZz09">iSCSI SAN</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=MGhTaC9pR2ZxUHVCT2Z2dmNKVlJIdz09">Unified Storage</a></li>
+		                  
+
+		                </ul>
+	              	</li>
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+		                   <li class="nav-header firstmenu"><a href="/index.php/site/category?qr=NHp1TllIQ3RNZ1d6Wnd1dW5CNm1UQT09">  Network Security</a></li>
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=YzFkUmtnNEtLRnE4cU5OeWoyWEdKZz09">VPN Routers </a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=aHhuN0FBbWQyY3Z0KzFJajloaHZFdz09">UTM Firewalls</a></li>
+		                  
+
+		                </ul>
+	              	</li>
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+		                   <li class="nav-header firstmenu"><a href="https://dlinkmea.com/me/index.php?h=1?qr=aTdBNVRpQWVZTUo2TkNjemNTcDNsUT09">  Structured Cabling</a></li>
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="https://dlinkmea.com/me/index.php?h=1?qr=TzJCaUF6NVRCcDVEQktDb2N6RXpiQT09">Copper Products</a></li>
+		                  			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="https://dlinkmea.com/me/index.php?h=1?qr=djl6K0lpVGNFUmdwTGVXSnhtZHRBZz09">Fiber Products</a></li>
+		                  
+
+		                </ul>
+	              	</li>
+            
+	            	<li class="mega-menu-column">
+		                <ul>
+		                  <!--li class="nav-header firstmenu"><a href="">  </a></li-->
+		                   <li class="nav-header firstmenu"><a href="/index.php/site/category?qr=UitQOXMrWEYxQnVEbThRUDRpRTY1Zz09">  Media Converters</a></li>
+              			                  <!--li class="firstmenu"><a href=""></a></li-->
+			                  <li class="firstmenu"><a href="/index.php/site/products?qr=NHc1Y0xzVXkxQU4rNlZobDZPbFlpdz09">Media Converters</a></li>
+		                  
+
+		                </ul>
+	              	</li>
+                        </ul>
+          </li>
+
+
+        <li class=" s dropdown"><a href="#">SERVICE PROVIDERS </a>
+          <ul class="dropdown-menu mega-menu">
+            <li class="mega-menu-column" style="min-width: 259px;">
+              <ul>
+                <li class="firstmenu"><a href="/index.php/site/whydlink">Why D-Link</a></li>
+                <li class="firstmenu"><a href="/index.php/site/technology">Technology</a></li>
+                <li class="firstmenu"><a href="/index.php/site/products_info">Products</a></li>
+                <li class="firstmenu"><a href="/index.php/site/customerEquipment">Customer Equipment</a></li>
+                <!-- <li><a href="">Contact</a></li> -->
+              </ul>
+            </li>
+          </ul>
+          </li>
+        <li><a href="/index.php/site/where_to_buy">WHERE TO BUY</a></li>
+        <li><a href="/index.php/site/support">SUPPORT</a></li>
+
+      </ul>
+
+    <form method="get" action="/index.php/site/search" class="navbar-form navbar-right  no_pad" role="search">
+        <div class="form-group">
+    <span class="serachspan">    <input name="seacrh_term" type="text" class="form-control"  placeholder="SEARCH"> 
+    <button type="submit" class="nav searchbutton" onclick="this.form.submit();"><i class="fa fa-search"></i></button></span>        </div>
+      </form>
+
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav></header>
+
+</div><!---container-->
+ <div class="container">
+       <script type="text/javascript" language = javascript>
+function check(obj,id)
+{
+   var cid= "checkall"+id;
+   window.v =0;
+
+
+       var product_sub_category_id = $("#product_sub_category_id").val();
+var category_id = $("#category_id").val();
+var sub_category_id = $("#sub_category_id").val();
+var product_category_id = $("#product_category_id").val();
+//var checklist;
+var checklist = new Array();
+$(".checkChild:checked").each(function() {
+    var name=$(this).attr("name");
+    var val=parseInt($(this).val());
+    name=name.replace("checklist", "");
+    name=name.replace("[", "");
+    name=name.replace("]", "");
+    name=name.replace("[", ",");
+    name=name.replace("]", "");
+    var result = name.split(",");
+    var i=parseInt(result[0]);
+    var j=parseInt(result[1]);
+    checklist[i]=new Array();
+	});
+$(".checkChild:checked").each(function() {
+    var name=$(this).attr("name");
+    var val=parseInt($(this).val());
+    name=name.replace("checklist", "");
+    name=name.replace("[", "");
+    name=name.replace("]", "");
+    name=name.replace("[", ",");
+    name=name.replace("]", "");
+    var result = name.split(",");
+    var i=parseInt(result[0]);
+    var j=parseInt(result[1]);
+    checklist[i].push(val);
+	});
+
+        jQuery.ajax({
+                                        "type": "POST",
+                                        "dataType": "json",
+                                        "url": "/index.php/site/getProducts",
+                                        "data": { "product_sub_category_id":product_sub_category_id,"category_id":category_id,"sub_category_id":sub_category_id,"product_category_id":product_category_id,"checklist":checklist },
+                                        "cache": false,
+                                        "success": function(data) {
+                                            $("#filterfeatureproducts").html(data.products);
+                                            return false;
+                                         },
+                                        });
+
+
+
+ // alert("))))"+cid);
+ //alert(cid);
+            // unchecks all checklist when 'all' checkbox is checked.
+
+    //............................................................................
+    //$("dl").nextAll(){
+        if (obj.checked === true)                               // unchecks 'all'checkbox when any checklist checked.
+        {
+                $('#'+cid).prop("checked", false);
+        }
+        else
+        {
+
+            $('.childcheckall'+id).each(function () {
+                var t1 = $(this);
+                if ( t1.is(':checked') ){
+	           		window.v++;
+	           	}
+           });
+
+            if(window.v==0)
+    		{
+    			$('#'+cid).prop("checked", true);
+    		}
+        }
+
+
+
+    
+        $("#"+cid).click(function () {
+        	$("#"+cid).prop("checked", true);
+        //if ($("#"+cid).is(':checked')) {
+            $('.childcheckall'+id).prop("checked", false);
+        //}
+        var product_sub_category_id = $("#product_sub_category_id").val();
+var category_id = $("#category_id").val();
+var sub_category_id = $("#sub_category_id").val();
+var product_category_id = $("#product_category_id").val();
+//var checklist;
+var checklist = new Array();
+$(".checkChild:checked").each(function() {
+    var name=$(this).attr("name");
+    var val=parseInt($(this).val());
+    name=name.replace("checklist", "");
+    name=name.replace("[", "");
+    name=name.replace("]", "");
+    name=name.replace("[", ",");
+    name=name.replace("]", "");
+    var result = name.split(",");
+    var i=parseInt(result[0]);
+    var j=parseInt(result[1]);
+    checklist[i]=new Array();
+	});
+$(".checkChild:checked").each(function() {
+    var name=$(this).attr("name");
+    var val=parseInt($(this).val());
+    name=name.replace("checklist", "");
+    name=name.replace("[", "");
+    name=name.replace("]", "");
+    name=name.replace("[", ",");
+    name=name.replace("]", "");
+    var result = name.split(",");
+    var i=parseInt(result[0]);
+    var j=parseInt(result[1]);
+    checklist[i].push(val);
+	});
+
+        jQuery.ajax({
+                                        "type": "POST",
+                                        "dataType": "json",
+                                        "url": "/index.php/site/getProducts",
+                                        "success": function(data) {
+                                        $("#filterfeatureproducts").html(data.products);
+                                         },
+                                        "data": { "product_sub_category_id":product_sub_category_id,"category_id":category_id,"sub_category_id":sub_category_id,"product_category_id":product_category_id,"checklist":checklist },
+                                        "cache": false
+                                        });
+    });
+
+}
+function check1()
+{
+            var product_sub_category_id = $("#product_sub_category_id").val();
+var category_id = $("#category_id").val();
+var sub_category_id = $("#sub_category_id").val();
+var product_category_id = $("#product_category_id").val();
+          jQuery.ajax({
+                                        "type": "POST",
+                                        "dataType": "json",
+                                        "url": "/index.php/site/getProducts",
+                                        "success": function(data) {
+                                        $("#filterfeatureproducts").html(data.products);
+                                         },
+                                        "data": { "product_sub_category_id":product_sub_category_id,"category_id":category_id,"sub_category_id":sub_category_id,"product_category_id":product_category_id},
+                                        "cache": false
+                                        });
+}
+
+</script>
+
+
+<div class="slides">
+    <div class="slide">
+        <link type="text/css" rel="stylesheet" href="#"><div class="default-content-box"> <div class="container"> <div> <h1 class="font-family-myriadpro-light">Network Video Recorder</h1> <div class="description"> <p>A Network Video Recorder (NVR) is a software program that records video in a digital format to a disk drive, USB flash drive, SD memory card or other mass storage device. An NVR contains no dedicated video capture hardware. However, the software is typically run on a dedicated device, usually with an embedded operating system</p> </div> </div> </div> </div>
+    </div>
+</div>
+<div class="baner">
+        		<img class="img-responsive banertop" src="/images/banner/defaultbaner.jpg" alt="">	
+    	
+
+    <div id="product_box2" class="bar-top">
+        <div class="container">
+             Home             
+             
+             <a href="/index.php/site/category?qr=VWxLcnRvMGNUdlNsaEdNbDB1czRBUT09">Home Security </a><a href="/index.php/site/product_category?qr=QWRUa1RydHhMbFlBOXVpeHJKczEydz09">Network Video Recorder</a>             
+             
+                    </div>
+    </div>
+</div>
+    <section class="product-list">
+    <div class="container">
+
+        <!--MOBILE purpose only-->
+
+        <div class="panels hidden-sm hidden-md hidden-lg ">
+            <!-- Panel heading -->
+            <div class="panels-heading">
+                <h4 class="panels-title">
+                    <a data-toggle="collapse" data-parent="#accordion-alt3" href="#divFilterBy">
+                        <i class="fa fa-chevron-down"></i>
+
+                    </a>
+                </h4>
+            </div>
+        </div>
+
+        <!--left side-->
+        <form id="filtersssss-form" action="/index.php/site/products?qr=QWRUa1RydHhMbFlBOXVpeHJKczEydz09" method="post">
+<input type="hidden" value="4f00557f0911c14a4435e7aacb790ff602165c2d" name="YII_CSRF_TOKEN" />        
+        </form>
+        <!--right side-->
+                <div class="col-xs-12 text-center no-product">
+            <img src="/images/no-product.png" alt="No Products Available" >
+        </div>
+                <div class="co col-sm-9 l product-list-content">
+            <div class="page-content" id="divProductContent">
+                <div class="row-wrapper first">
+
+
+
+
+
+                    <div class="row-wrapper" id="filterfeatureproducts">
+                        <ul class="no_pad">
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</section> </div>
+
+
+            <!---FOOTER-->
+
+
+            <footer>
+
+
+
+	<div class="container">
+		<div class="row">
+      <div class="col-sm-6">
+         <h5 class="widgetheading "><strong>LINKS</strong></h5>
+         <div class="col-sm-4 fo">
+          <ul class="link-list">
+            <li><a href="/index.php/site/index">HOME</a></li>
+            <li><a href="/index.php/site/page?qr=RUpodkgrRVVQZ3FDWUU3MnBQMjFIZz09">ABOUT US</a></li>
+            <li><a href="/index.php/site/contactus">CONTACT</a></li>
+            <li><a href="/index.php/site/where_to_buy">WHERE TO BUY</a></li>
+            <li><a href="/index.php/site/support" >TECHNICAL SUPPORT</a></li>
+          </ul>
+         </div>
+
+         <div class=" fo col-sm-4">
+          <div class="widget">
+            <ul class="link-list">
+              <!-- li><a href="http://www.dlinkmea.com/partner/" target="_blank">PARTNER PORTAL</a></li 
+              <li><a href="http://www.dlinkmea.com/register/" target="_blank">REGISTER PRODUCTS</a></li>-->
+              <li><a href="#">SERVICE PROVIDERS</a></li>
+            <li><a href="/index.php/site/page?qr=d21xMC9FSndVWWt2NGF1MWp5aEdaZz09">ALLIANCE</a></li>
+              <!--li><a href="">ALLIANCE</a></li-->
+              <li><a href="http://dme.dlink.com.tw/esales/login.aspx" target="_blank">E-SALES</a></li>
+              <li><a href="/index.php/site/page?qr=Z09kTnJTaGwxZWJFdkE5Mk4zajdSZz09">CAREERS</a></li>
+              <li><a href="https://dlinkmea.com/warranty.pdf" target="_blank">WARRANTY</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class=" fo col-sm-4">
+          <div class="widget">
+            <ul class="link-list">
+              <li><a href="/index.php/site/allproducts">ALL PRODUCTS</a></li>
+              <!--li><a href="http://www.dlinktv.com/" target="_blank">WATCH VIDEOS</a></li-->
+              <li><a href="https://www.youtube.com/channel/UCD-OB0kKXmiO3dS8MkiBGuA" target="_blank">WATCH VIDEOS</a></li>
+              <li><a href="/index.php/site/news">NEWS & EVENTS</a></li>
+              <li><a href="#">MYDLINK SERVICES</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class=" fo newsletter col-sm-6 col-md-3">
+        <h5 class="widgetheadingtwo ">STAY UP-TO-DATE WITH D-LINK</h5>
+        <form method="post" class="footer navbar-form navbar-right" role="search">
+          <div class="newsletter">
+            <span class=" footer newsletter">
+              <input type="text" class="form-control news" name="news_letter_email"  id="news_letter_email" placeholder="ENTER YOUR E-MAIL" >
+              </span>
+              <div class="newsletterimg">
+               <a href="#"  data-toggle="modal" onclick="validateSignUpForm();"><img class="newsletter" alt="news letter signup" src="/img/front/newslettersignup.png"></a>
+             </div>
+           </div>
+         </form>
+
+         <!-- model -->
+         
+         <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="smallModal" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Please verify</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="rcaptcha">
+                  <div class="g-recaptcha" data-sitekey="6Lfg2yQTAAAAAC7pcIczGBSS1MCrc140A1XQ3fta"></div>
+                  </div>
+                </div>
+                <div class="modal-footer text-center">
+                  <form method="post" action="/index.php/site/subscribe">
+                  <input type="hidden" name="emailsend" value="" id="emailsend">
+                  <button type="button" class="btn btn-primary" onclick="saveSignUpForm();">SIGN UP</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+       </div>
+   <!-- model -->
+        <div class="fo col-sm-12 col-md-3">
+          <h5 class="widgetheadingthree ">FOLLOW US</h5>
+          <div class="social-network">
+            <ul>
+             <li class="facebook">
+              <a href="https://www.facebook.com/dlinkmea" target="_blank">
+                <img src="/img/front/17_Social_media_logos_32px_13.png" alt="facebook">
+              </a>
+             </li>
+             <li class="youtube">
+              <a href="https://www.youtube.com/user/DLinkTV" target="_blank">
+                <img src="/img/front/17_Social_media_logos_32px_64.png" alt="youtube">
+              </a>
+             </li>
+            </ul>
+          </div>
+      </div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+
+                <div class="col-sm-12">
+					<div class="company">
+						<p>
+							<span>Powered by<a href="http://bluesky.ae/" target="_blank"> <b>Bluesky Technology Consultants </b> </a></span>
+						
+                                                <!--a href="https://seal.beyondsecurity.com/vulnerability-scanner-verification/blueskyjobs.online"><img src="https://seal.beyondsecurity.com/verification-images/blueskyjobs.online/vulnerability-scanner-2.gif" alt="Website Security Test" border="0" /></a-->
+                                                </p>
+                                        </div>
+				</div>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+  <script type="text/javascript" src="/js/front/common.js"></script>
+<script type="text/javascript" src="/js/front/tiny-toggle.js"></script>
+<script type="text/javascript" src="/js/front/jquery.etalage.min.js"></script>
+<script type="text/javascript" src="/js/front/cloud-zoom.1.0.2.js"></script>
+</body>
+</html>

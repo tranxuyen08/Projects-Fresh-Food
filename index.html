@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Work+Sans&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="image/images.jpeg">
+  <link rel="stylesheet" href="stylesheet/styles.css">
+  <link rel="stylesheet" href="stylesheet/test.css">
+  <title> Fresh Food Farm</title>
+</head>
+
+<body id="body">
+  <header class="header">
+    <div class="container">
+      <div class="content">
+        <a href="/index.html" class="logo">
+          <img src="image/zyro-image.png" alt="logo">
+        </a>
+        <div class="search">
+          <input class="input-search" type="text" name="" id="" placeholder="Search Keyword">
+          <button onclick="handleSearch()" class="btn btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <a href="cart.html" class="account-user">
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="push-top">
+    <a href="#body"><button class="btn"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></button></a>
+  </div>
+  <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light nav-header">
+    <div class="container">
+      <div class="nav-content">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Product
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                News
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="cart">
+          <a class="cart-link" href="cart.html">
+            <p class="quantity"></p>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+          <a class="cart-link" href=""><i class="fa-regular fa-heart"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="main">
+    <section class="banner section">
+      <div class="banner-opacity"></div>
+      <div class="container">
+        <div class="sect-content">
+          <div class="sect-header">
+            <h1 class="banner-title"><span>Fresh</span> Food Farm</h1>
+            <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+          </div>
+          <a class="banner-link" href="#">
+            <p class="text">View more</p>
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+        <div class="dope">
+          <div class="circile"></div>
+          <div class="circile"></div>
+          <div class="circile"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section sect-product">
+      <div class="container">
+        <div class="products-content">
+          <h2 class="title-h2">Our Products</h2>
+          <div class="tab-item">
+            <a class="tab-vegetable" href="">Vegetable-Fruit</a>
+            &nbsp
+            <span>/</span>
+            &nbsp
+            <a class="tab-meat" href="">Meat-Sea Food</a>
+          </div>
+          <p class="error-fillter hidden"></p>
+          <ul class="list-products row">
+          </ul>
+          <nav aria-label="Page navigation example ">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+              </li>
+              <!-- <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section class="section sect-sale">
+      <div class="bkg-opacity"></div>
+      <div class="container">
+        <div class="sale-content">
+          <h2 class="title-h2 title-sale">Big Sale Today</h2>
+          <div class="time-sale">
+            <div class="countdown-time">
+              <div>Day</div>
+              <div>Hours</div>
+              <div>Mins</div>
+              <div>Secs</div>
+            </div>
+            <div class="time">
+            </div>
+          </div>
+          <ul class="list-sale row">
+
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="sect-recipes section">
+      <div class="container">
+        <div class="receipes-content">
+          <h2 class="receipes-title title-h2">Best Recipes</h2>
+        </div>
+        <ul class="list-recipes row">
+          <li class="item-recipes col-3">
+            <a class="link-recipes" href="#">
+              <div class="img-recipes"><img src="image/1000_F_589672059_p5rGPbOePBbeUHYeXraPBf1SKAkpjfJY.jpg" alt="">
+              </div>
+              <div class="link-recipes-content">
+                <h3 class="title-h3 title-product">Nanoparticles from Cellulose 1</h3>
+                <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nstrud exercitation ullamco laboris...</p>
+              </div>
+            </a>
+          </li>
+          <li class="item-recipes col-3">
+            <a class="link-recipes" href="#">
+              <div class="img-recipes"><img src="image/1000_F_554465019_GulQGHNqRXXOPramPc7ftZbn2puSTapb.jpg" alt="">
+              </div>
+              <div class="link-recipes-content">
+                <h3 class="title-h3">Nanoparticles from Cellulose 1</h3>
+                <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nstrud exercitation ullamco laboris...</p>
+              </div>
+            </a>
+          </li>
+          <li class="item-recipes col-3">
+            <a class="link-recipes" href="#">
+              <div class="img-recipes"><img src="image/1000_F_498789359_pRRsu95QmQR4CFsDNE7lVWfLTF5mRvwW.jpg" alt="">
+              </div>
+              <div class="link-recipes-content">
+                <h3 class="title-h3">Nanoparticles from Cellulose 1</h3>
+                <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nstrud exercitation ullamco laboris...</p>
+              </div>
+            </a>
+          </li>
+          <li class="item-recipes col-3">
+            <a class="link-recipes" href="#">
+              <div class="img-recipes"><img src="image/1000_F_268073936_QK8vRSxbozhrIRFwvdMOVBHoVcqqqX27.jpg" alt="">
+              </div>
+              <div class="link-recipes-content">
+                <h3 class="title-h3">Nanoparticles from Cellulose 1</h3>
+                <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nstrud exercitation ullamco laboris...</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="sect-test">
+      <div class="container">
+        <div class="test-content">
+          <h2 class="title-h2"><span> New's</span> &nbsp Today</h2>
+        </div>
+        <div class="options">
+          <div class="option active"
+            style="background-image:url(image/240_F_583951468_i9pLSsMfhtgKD8pAXE2Dy3R5H4XiZHUH.jpg)">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="image/240_F_583951468_i9pLSsMfhtgKD8pAXE2Dy3R5H4XiZHUH.jpg" />
+              </div>
+              <a href="">
+                <div class="info">
+                  <div class="main text-list">Content New's</div>
+                  <div class="sub text-list">Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="option"
+            style="background-image:url(image/1000_F_110501629_2BExSO5533TTJieJKd0OZnALO6F9S92K.jpg);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="image/1000_F_110501629_2BExSO5533TTJieJKd0OZnALO6F9S92K.jpg" />
+              </div>
+              <a href="">
+                <div class="info">
+                  <div class="main text-list">Content New's</div>
+                  <div class="sub text-list">Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="option" style="background-image:url(image/1000_F_79493110_XxuQKcQDMhsC5SbLNXERuKPa7SKus7hF.jpg);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="image/1000_F_79493110_XxuQKcQDMhsC5SbLNXERuKPa7SKus7hF.jpg" />
+              </div>
+              <a href="">
+                <div class="info">
+                  <div class="main text-list">Content New's</div>
+                  <div class="sub text-list">Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="option" style="background-image:url(image/240_F_588647864_sLbMvX9h9TuIx9FCAiSDdZfTcY4vs81O.jpg);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="image/240_F_588647864_sLbMvX9h9TuIx9FCAiSDdZfTcY4vs81O.jpg" />
+              </div>
+              <a href="">
+                <div class="info">
+                  <div class="main text-list">Content New's</div>
+                  <div class="sub text-list">Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="option" style="background-image:url(image/240_F_589103662_BkBakcL3qTOSWTDXJPlpF2XYNT3vEUxc.jpg);">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <img src="image/240_F_589103662_BkBakcL3qTOSWTDXJPlpF2XYNT3vEUxc.jpg" />
+              </div>
+              <a href="">
+                <div class="info">
+                  <div class="main text-list">Content New's</div>
+                  <div class="sub text-list">Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="opacity-footer"></div>
+    <ul class="foooter-content row">
+      <li class="item-infor col-3">
+        <ul class="list-contact">
+          <li class="item-contact">
+            <a href="" class="shopp-link">
+              <h2 class="title">Fresh Food Mart</h2>
+            </a>
+          </li>
+          <li class="item-contact">
+            <div>
+              <i class="fa-solid fa-house"></i>
+              <p>32 Võ Văn Dũng, Đống Đa, Hà Nội</p>
+            </div>
+          </li>
+          <li class="item-contact">
+            <div>
+              <i class="fa-solid fa-mobile"></i>
+              <p>0342222704</p>
+            </div>
+          </li>
+          <li class="item-contact">
+            <div>
+              <i class="fa-solid fa-mobile"></i>
+              <p>0342222704</p>
+            </div>
+          </li>
+          <li class="item-contact">
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <p>tranxuyen08@gmail.com</p>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="item-infor col-3">
+        <h3 class="title-h3">Service</h3>
+        <a href="" class="link">Introduce</a>
+        <a href="" class="link">Recruitment</a>
+        <a href="" class="link">Contact</a>
+        <a href="" class="link">Picture</a>
+      </li>
+      <li class="item-infor col-3">
+        <h3 class="title-h3">News</h3>
+        <a href="" class="link">News today</a>
+        <a href="" class="link">News today</a>
+        <a href="" class="link">News today</a>
+        <a href="" class="link">News today</a>
+      </li>
+      <li class="item-infor col-3">
+        <h3 class="title-h3">Send Email</h3>
+        <p class="text-footer">Send email to receive promotion</p>
+        <div class="send-email">
+          <input type="text" name="" id="" placeholder="Enter your email">
+          <button class="btn btn-send"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+        <ul class="list-social">
+          <li class="item-social" style="--color: #385898">
+            <span class="icon">
+              <i class="fa-brands fa-facebook" style="color: #0840a1;"></i>
+            </span>
+          </li>
+          <li class="item-social" style="--color: #359cf1">
+            <span class="icon">
+              <i class="fa-brands fa-twitter" style="color: #359cf1;"></i>
+            </span>
+          </li>
+          <li class="item-social" style="--color: #ed3833">
+            <span class="icon">
+              <i class="fa-brands fa-youtube" style="color: #ed3833;"></i>
+            </span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="javascript/test.js"></script>
+  <script src="javascript/index.js"></script>
+  <!-- <script src="javascript/db.js"></script> -->
+</body>
+
+</html>

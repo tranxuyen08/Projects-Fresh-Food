@@ -1,0 +1,168 @@
+.admin-main{
+  position: relative;
+  top: 90px;
+}
+.prodcuts-admin {
+  width: 100%;
+}
+
+.product-img {
+  width: 150px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn-edit {
+  background-color: #eded28;
+  color: black;
+}
+
+.btn-edit:hover {
+  background-color: #a4a412;
+  color: white;
+}
+
+.btn-delete {
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+  width: 100px;
+  height: 50px;
+}
+
+.btn-delete:hover {
+  background-color: #a51e1e;
+  color: black;
+}
+
+tr>td:last-child>div {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.search-admin {
+  width: 50%;
+  margin: 50px auto;
+  border: 1px solid #40a944f2;
+  border-radius: 20px;
+}
+
+.form {
+  display: grid;
+  width: 50%;
+  /* gap: 10px; */
+  font-size: 18px;
+  font-style: italic;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(8, 8, 8, 0.8);
+  color: #ffffff;
+  top: 0px;
+  left: 366px;
+  z-index: 10;
+}
+
+.form {
+  -webkit-animation: animatezoom 0.4s;
+  animation: animatezoom 0.5s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.show-img-edit {
+  width: 50%;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.title-h3 {
+  display: grid;
+  justify-content: center;
+}
+
+.form>input {
+  padding: 10px 15px;
+  width: 90%;
+  height: 60px;
+  margin: 0 auto !important;
+  border-radius: 15px;
+  border: 1px solid #40a944f2;
+}
+
+.form>textarea {
+  padding: 20px 15px;
+  width: 90%;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 1px solid #40a944f2;
+}
+
+.btn-add {
+  background-color: #40a944f2;
+  color: white;
+}
+
+.btn-add:hover {
+  background-color: #0a6f0a;
+}
+
+.btn-create {
+  width: 100px;
+  height: 50px;
+  background-color: #eded28;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.btn-create:hover {
+  background-color: #0a6f0a;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-update:hover {
+  background-color: #0a6f0a;
+  color: white;
+}
+
+.btn-close-tab {
+  position: absolute;
+  right: 0;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background-color: #ec2020;
+  color: black;
+}
+
+.btn-close-tab:hover {
+  background-color: #a51e1e;
+}
