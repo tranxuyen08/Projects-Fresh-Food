@@ -190,10 +190,10 @@ function handleLogin() {
             user.cart = [...e.cart]
             localStorage.setItem('user', JSON.stringify(user));
         }
-        if(e.email !== loginEmail || e.password !== loginPass){
-            alert('Tài khoả hoặc mâtj khẩu không đúng!! Vui lòng thử lại')
-            isCheck = false
-        }
+        // if(e.email !== loginEmail || e.password !== loginPass || loginEmail != "admin@gmail.com"){
+        //     alert('Tài khoả hoặc mât khẩu không đúng!! Vui lòng thử lại')
+        //     isCheck = false
+        // }
     })
 
 }

@@ -14,7 +14,6 @@ function renderProducts(element) {
 
 
   // nếu accounts = null thì không hiển thị logout
-  console.log(userAccounts);
   if (userAccounts === null) {
     userLogin += `
           </div>

@@ -281,7 +281,7 @@ function handEdit(i) {
     <div class="show-img-edit"><img id="previewImg" src="${products[i].image}" alt=""></div>
     <input class="name-product" type="text" name="" id="" placeholder="Enter Name Produts" value="${products[i].name}">
     <input class="img-product" type="file" name="" id="" value="${products[i].image}">
-    <input class="price-product" type="number" name="" id="" value="${products[i].price}">
+    <input class="price-product" type="number" name="" id="" value="${(products[i].price).toLocaleString('de-DE')}">
     <input class="sale-product" type="number" name="" id="" value="${products[i].sale}">
     <input class="type-product" type="text" name="" id=""value="${products[i].type}">
     <textarea class="content-product" name="" id="" cols="30" rows="10" value="">${products[i].content}</textarea>
