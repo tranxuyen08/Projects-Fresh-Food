@@ -160,4 +160,4 @@ const products = [
     price: 25000
   },
 ]
-localStorage.setItem('products', JSON.stringify(products)) ?? [];
+localStorage.setItem('products', JSON.stringify(products))
