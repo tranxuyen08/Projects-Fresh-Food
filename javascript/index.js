@@ -1,5 +1,5 @@
 const userAccounts = JSON.parse(localStorage.getItem('user'))
-const products = JSON.parse(localStorage.getItem('products'))
+const products = JSON.parse(localStorage.getItem('products')) ??[]
 // function render
 function renderProducts(element) {
   console.log("element", element);
