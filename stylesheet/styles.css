@@ -640,6 +640,7 @@ img {
 /* footer */
 .footer {
   position: relative;
+  top: 90px;
 }
 
 .opacity-footer {
