@@ -43,19 +43,8 @@ function renderProducts(element) {
   }
   renderLoginUser.innerHTML = userLogin
 
-  // let tablePagination = ""
   let table = ""
   let dataTableSale = ""
-
-  // const totalPagination = parseInt(element.length / 10)
-  // const renderPage = parseInt(element.length / 6)
-  // for (i = 0; i <= renderPage; i++) {
-  //   tablePagination += `
-  //   <li class="page-item"><a class="page-link" href="#">${i + 1}</a></li>
-  //   `
-  // }
-
-  // render products sale
   products.forEach((item, index) => {
     if (item.sale !== "") {
       dataTableSale += `

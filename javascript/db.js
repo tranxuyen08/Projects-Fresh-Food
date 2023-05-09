@@ -160,4 +160,8 @@ const productsDB = [
     price: 25000
   },
 ]
-localStorage.setItem('products', JSON.stringify(productsDB))
+// localStorage.setItem('products', JSON.stringify(productsDB))
+const objectProductList = JSON.parse(localStorage.getItem("products"));
+if(!objectProductList){
+    localStorage.setItem("products", JSON.stringify(productsDB));
+}
