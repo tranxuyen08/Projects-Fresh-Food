@@ -1,5 +1,5 @@
 const userAccounts = JSON.parse(localStorage.getItem('user'))
-const products = JSON.parse(localStorage.getItem('products')) ??[]
+const products = JSON.parse(localStorage.getItem('products')) ?? []
 // function render
 function renderProducts(element) {
   console.log("element", element);
@@ -15,7 +15,7 @@ function renderProducts(element) {
 
   // nếu accounts = null thì không hiển thị logout
   console.log(userAccounts);
-  if(userAccounts === null){
+  if (userAccounts === null) {
     userLogin += `
           </div>
           <div class="login-register">
@@ -25,17 +25,17 @@ function renderProducts(element) {
             <a class="register-link" href="login.html?form=register">Register</a>
           </div>
           `
-      qtyProduct.innerHTML = 0
-  }else{
+    qtyProduct.innerHTML = 0
+  } else {
     userLogin += `
-    <div class="user">${userAccounts.avatar ? '<img class="avata" src='+userAccounts.avatar+'alt="avata"></img>' : '<i class="fa-solid fa-user"></i>'}</div>
+    <div class="user">${userAccounts.avatar ? '<img class="avata" src=' + userAccounts.avatar + 'alt="avata"></img>' : '<i class="fa-solid fa-user"></i>'}</div>
     <div class="login-register">
       <p class="user-name">${userAccounts.name}</p>
       <button onclick="handleLogout()" class="btn btn-logout" type="submit">Logout</button>
     </div>
     `
-    if(userAccounts.cart !== ""){
-      userAccounts.cart.forEach((e , i) =>{
+    if (userAccounts.cart !== "") {
+      userAccounts.cart.forEach((e, i) => {
         totalQty += e.qty;
       })
     }
@@ -72,7 +72,7 @@ function renderProducts(element) {
     `
     }
   });
-      // render products
+  // render products
 
   element.forEach((item, index) => {
     table += `
@@ -149,36 +149,42 @@ const countdown = setInterval(() => {
 // handle search
 function handleSearch() {
   const valuesearch = document.querySelector(".input-search").value;
-  const renderFillter = document.querySelector('.error-fillter')
-  console.log(renderFillter);
+  const renderFillter = document.querySelector('.error-fillter');
   const datasearch = [];
+  let hasResults = false; // Biến để kiểm tra xem có kết quả tìm kiếm hay không
+
   products.forEach((item) => {
     if (item.name.toLowerCase().includes(valuesearch.toLowerCase()) || item.type.toLowerCase().includes(valuesearch.toLowerCase())) {
       datasearch.push(item);
-      renderFillter.classList.add('hidden')
-    }else{
-      renderFillter.classList.remove('hidden')
+      hasResults = true; // Đánh dấu có kết quả tìm kiếm
+      return;
     }
   });
-  renderProducts(datasearch);
 
+  if (hasResults) {
+    renderFillter.classList.add('hidden'); // Ẩn thông báo lỗi nếu có kết quả tìm kiếm
+  } else {
+    renderFillter.classList.remove('hidden'); // Hiển thị thông báo lỗi nếu không có kết quả tìm kiếm
+  }
+
+  renderProducts(datasearch);
 }
 
 function handleLogout() {
   localStorage.removeItem('user')
   const renderLoginUser = document.querySelector('.account-user')
-  window.location ='/'
+  window.location = '/'
 }
-function handleClickBuy(element){
+function handleClickBuy(element) {
   const accounts = JSON.parse(localStorage.getItem('accounts'));
   const user = JSON.parse(localStorage.getItem('user'))
   const products = JSON.parse(localStorage.getItem('products'))
   let qtyProduct = document.querySelector('.quantity')
   let checkCart = false
   const cart = {}
-  if(user === null){
+  if (user === null) {
     alert('vui long dang nhap de mua san pham')
-  }else{
+  } else {
     products.forEach((value, index) => {
       if (index == element) {
         cart.id = value.id

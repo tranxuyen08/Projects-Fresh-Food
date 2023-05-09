@@ -129,7 +129,7 @@ function handleRegister() {
     checkUser.forEach((element) => {
         if (inputEmail === element.email.toLowerCase().trim()) {
             checkErrorUserName.innerHTML = "Email Đã Tồn Tại"
-            isCheck = true
+            isCheck =  true
         }
     })
     if (!isCheck) {
@@ -226,14 +226,5 @@ function validator(user) {
         error.isError = true;
         error.errorRepeatPassword = "Password không trùng khớp, nhập lại";
     }
-    // error login
-    // if(user.errorEmailLogin !== user.email){
-    //     error.isError = true
-    //     error.errorRepeatPassword = "Email không dung";
-    // }
-    // if(user.errorPaswordLogin !== user.password){
-    //     error.isError = true
-    //     error.errorRepeatPassword = "Password không dung";
-    // }
     return error;
 }
