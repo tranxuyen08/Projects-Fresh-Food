@@ -188,10 +188,14 @@ function handleLogin() {
         }
         if (user.email === e.email) {
             user.cart = [...e.cart]
-            console.log(1111,user);
             localStorage.setItem('user', JSON.stringify(user));
         }
+        if(e.email !== loginEmail || e.password !== loginPass){
+            alert('Tài khoả hoặc mâtj khẩu không đúng!! Vui lòng thử lại')
+            isCheck = false
+        }
     })
+
 }
 
 

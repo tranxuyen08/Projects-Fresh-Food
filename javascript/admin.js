@@ -253,7 +253,7 @@ function handleAdd() {
     product.content = addText
     product.type = addType
     product.sale = addSale
-    product.price = addPrice.toLocaleString('de-DE')
+    product.price = addPrice
     products.push(product)
     alert("Thêm sản phẩm thành công")
     localStorage.setItem('products', JSON.stringify(products))
@@ -264,7 +264,6 @@ function handleAdd() {
 }
 
 function handleDelete(i) {
-  // alert('ban chac chan muon xoa')
   confirm('ban chac chan muon xoa')
   products.splice(i, 1);
   localStorage.setItem('products', JSON.stringify(products))
@@ -282,7 +281,7 @@ function handEdit(i) {
     <div class="show-img-edit"><img id="previewImg" src="${products[i].image}" alt=""></div>
     <input class="name-product" type="text" name="" id="" placeholder="Enter Name Produts" value="${products[i].name}">
     <input class="img-product" type="file" name="" id="" value="${products[i].image}">
-    <input class="price-product" type="number" name="" id="" value="${products[i].price.toLocaleString('de-DE')}">
+    <input class="price-product" type="number" name="" id="" value="${products[i].price}">
     <input class="sale-product" type="number" name="" id="" value="${products[i].sale}">
     <input class="type-product" type="text" name="" id=""value="${products[i].type}">
     <textarea class="content-product" name="" id="" cols="30" rows="10" value="">${products[i].content}</textarea>

@@ -771,8 +771,19 @@ img {
   .search{
     display: none;
   }
-  .login-register{
-    display: none;
+  .content {
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+  .account-user{
+    display: flex;
+  }
+  .account-user:hover{
+    position: relative;
+  }
+  .account-user:hover > .login-register{
+    display: flex ;
   }
 }
 
@@ -863,6 +874,7 @@ img {
   .item-infor:last-child {
     margin-bottom: 20px;
   }
+
 }
 
 .user-name{

@@ -235,6 +235,7 @@ function handlePayment() {
         user.cart = []
         isCheck = false
         accounts.splice(i, 0, user)
+        alert('Chúc Mừng Bạn Vừa Thanh Toán Thành Công Sản Phẩm!')
       }
     }
   })
